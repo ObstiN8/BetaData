@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+<script src="newBeta.js"></script>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
   <link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
@@ -12,22 +13,18 @@
   <!-- HTML5 article tag for content -->
   <div id="content">
     <div class="topnav">
-      <button class="navButton" id="doneButton" onclick="location.href='editBeta.html';"><img src="Icons\check.png" width="25"></button>
+      <button class="navButton" id="doneButton" onclick=doneClicked();><img src="Icons\check.png" width="25"></button>
       <button class="navButton" id="cancelButton" onclick="location.href='index.html';"><img src="Icons\exit.png" width="25"></button>
       <button class="navButton" id="infoButton" onclick="location.href='info.html';"><img src="Icons\info.png" width="25"></button>
       <h1>New Beta</h1>
     </div>
-    <form>
+    <form name="routeInfoForm" onsubmit="return validateForm()">
       <label for="title">Give your Beta a title:</label><br>
       <input type="text" id="title" name="title"><br>
       <label for="routePic">Upload an image of the route:</label><br>
-      <input type="file" id="routePic" name="routePic"><br><br>
+      <input type="file" id="routePic" name="routePic" accept="image/*"><br><br>
       <!-- <input type="submit" value="Create Beta" onclick="location.href='editBeta.html';"> -->
     </form>
-    <script>
-      localStorage["title"] = document.getElementById("title").value);
-      localStorage["routePic"] = document.getElementById("routePic").value);
-    </script>
     <!-- P stands for paragraph -->
     <!-- <p>We believe in bicycles! Everything you need to be a WPI Cyclist.</p> -->
   </div>
