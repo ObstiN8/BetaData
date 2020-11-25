@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+	<link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title> Edit Beta </title>
+</head>
+
+<body>
+	<!-- HTML5 article tag for content -->
+	<div id="content">
+		<div class="topnav">
+			<button class="navButton" id="doneButton" onclick="location.href='home.html';"><img src="Icons\check.png" width="25"></button>
+			<button class="navButton" id="cancelButton" onclick="location.href='home.html';"><img src="Icons\exit.png" width="25"></button>
+			<button class="navButton" id="infoButton" onclick="location.href='info.html';"><img src="Icons\info.png" width="25"></button>
+			<h1>Beta Title</h1>
+		</div>
+		<!-- Pan/zoom image container: -->
+		<div id="container">
+			<div class="area">
+				<div class="rectangle"></div>
+				<div class="circle"></div>
+				<div class="text-area">
+					<h1>Example line of text</p>
+					</div>
+				</div>
+			</div>
+			<!-- Magnifying glass: -->
+			<!-- <div class="img-magnifier-container">
+				<img id="routePic" src="example_route.png" height="600px" alt="route">
+			</div> -->
+			<div class="botnav">
+				<button class="rButton" id="rfButton" ondrag="draggingRF();"><img src="Icons\outline_right_foot_1.png" width="25"></button>
+				<button class="rButton" id="rhButton" ondrag="draggingRH();"><img src="Icons\outline_right_hand_2.png" width="25"></button>
+				<button class="lButton" id="lhButton" ondrag="draggingLH();"><img src="Icons\outline_left_hand_2.png" width="25"></button>
+				<button class="lButton" id="lfButton" ondrag="draggingLF();"><img src="Icons\outline_left_foot_1.png" width="25"></button>
+			</div>
+		</div>
+	</body>
+	</html>

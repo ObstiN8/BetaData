@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
+	<link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no"/>
+	<title> Home </title>
+</head>
+
+<body>
+	<!-- HTML5 article tag for content -->
+	<div id="content">
+		<div class="topnav">
+			<button class="homeButton" onclick="location.href='home.html';">BETA DATA</button>
+			<button class="navButton" id="newBetaButton" onclick="location.href='newBeta.html';"><img src="Icons\add.png" width="25"></button>
+			<button class="navButton" id="infoButton" onclick="location.href='info.html';"><img src="Icons\info.png" width="25"></button>
+		</div>
+
+		<h1>My Betas:</h1>
+
+		<!-- P stands for paragraph -->
+		<!-- <p>We believe in bicycles! Everything you need to be a WPI Cyclist.</p> -->
+
+		<!-- Navigation buttons -->
+		<nav id="main_nav">
+			<ul>
+				<!-- LI stands for list item -->
+				<li>
+					<div class="viewBeta" onclick="location.href='editBeta.html';">My Beta 1<button class="editBeta" onclick="location.href='editBeta.html';"><img src="Icons\edit.png" width="15"></button></div>
+				</li>
+				<li>
+					<div class="viewBeta" onclick="location.href='viewBeta.html';">My Beta 2<button class="editBeta" onclick="location.href='editBeta.html';"><img src="Icons\edit.png" width="15"></button></div>
+				</li>
+			</ul>
+		</nav>
+		<footer></footer>
+	</div>
+</body>
+</html>

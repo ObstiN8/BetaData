@@ -1,0 +1,260 @@
+header {
+  font-family: Futura, Trebuchet MS;
+  font-weight: bold;
+  color: #AC2B37;
+  font-size: 25px;
+  padding: 0px 0px 0px 0px;
+}
+
+header.secondary {
+  padding-left: 75px;
+}
+
+h1 {
+  font-family: Futura, Trebuchet MS;
+  font-weight: bold;
+  font-size: 20px;
+  color: #e9e9e9;
+  padding: 5px;
+  margin: 0px
+}
+
+body {
+  margin: 0px;
+  font-family: Futura, Trebuchet MS;
+  font-weight: normal;
+  color: #000000;
+  font-size: 15px;
+  background-color: #A9B0B7;
+}
+
+p {
+  padding: 3px 3px 3px 10px;
+  font-weight: bold;
+}
+
+#content {
+  /* padding: 3px; */
+}
+
+#WPI {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  border: 3px solid #666;
+  border-radius: 31.5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+audio {
+  border: 3px solid #666;
+  height: 50px;
+  border-radius: 31.5px;
+  padding: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+button {
+  /*center the button*/
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  padding: 5px;
+  /*add an image to your button*/
+  /* border-image: url("orangeButton.png");
+  background: url("orangeButton.png"); */
+  background-size: cover;
+  border-radius: 500px;
+  /*set width and height for the button*/
+  /* width: 500; */
+  height: 30;
+}
+
+.topnav {
+  background-color: #333;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.topnav button.homeButton {
+  display: inline-flex;
+  float: left;
+  font-family: Consolas;
+  background-color: green;
+  color: #e9e9e9;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0px 500px 500px 0px;
+  padding-right: 10px;
+  margin-left: 0px;
+}
+
+.topnav button.navButton {
+  display: inline-flex;
+  float: right;
+  background-color: orange;
+  font-size: 20px;
+}
+
+.botnav {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0px 10px 0px;
+  overflow: hidden;
+}
+
+.botnav button.rButton {
+  display: inline-flex;
+  float: right;
+  background-color: orange;
+  font-size: 20px;
+  /* margin-right: 5px; */
+}
+
+.botnav button.lButton {
+  display: inline-flex;
+  float: left;
+  background-color: orange;
+  font-size: 20px;
+  /* margin-: 5px; */
+}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+body {
+    overflow: hidden;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.area {
+    border: 1px dashed black;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+}
+
+.circle {
+    height: 200px;
+    width: 200px;
+    background-color: navajowhite;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.rectangle {
+    background-color: navajowhite;
+    height: 150px;
+    width: 250px;
+    position: relative;
+}
+
+.text-area {
+    float: right;
+    position: relative;
+}
+
+div.viewBeta {
+  display: inline-flex;
+  float: left;
+  font-family: Consolas;
+  background-color: white;
+  color: black;
+  width: 500px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0px;
+  padding: 5px;
+  margin-right: 100px;
+  border: 1px solid #666; /* dark outline */
+}
+
+button.editBeta {
+  display: inline-flex;
+  float: right;
+  background-color: orange;
+  font-size: 20px;
+  margin-left: 230px;
+}
+
+
+button.back {
+  /*These lines override the previous styling of buttons*/
+  border-image: url("greyButton.png");
+  background: url("greyButton.png");
+  background-size: cover;
+  width: 60px;
+  height: 30px;
+
+  /*These lines position the back button inside the header*/
+  position:absolute;
+  left:16px;
+  top:8px;
+}
+
+#main_nav ul { padding: 0; margin: 0; }
+
+#main_nav li  {
+  list-style-type: none; /* remove bullet points */
+}
+
+#main_nav li a {
+  display: inline-flex;
+  text-decoration: none; /* remove underline */
+  /* border-radius: 10px;  /* rounded corners */
+  /* margin: 6px; */
+  padding: 10px;
+  color: #222;
+  font-weight: bold;
+
+  /* nice gradient shade on the buttons */
+  /* background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); */
+  background-color: white;
+  border: 1px solid #666; /* dark outline */
+}
+
+nav li:active {
+  background-color: #ccc;
+  background-image: none;
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+footer {
+  font-family: Futura;
+  font-weight: bold;
+  color: #000000;
+  font-size: 10px;
+  padding: 25px 3px 3px 10px;
+}
