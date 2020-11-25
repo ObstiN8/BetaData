@@ -148,10 +148,6 @@ button {
   height: 100px;
 }
 
-body {
-    overflow: hidden;
-}
-
 div.viewBeta {
   display: inline-flex;
   float: left;
