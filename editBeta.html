@@ -5,9 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen and (orientation:portrait)"/>
 	<link rel="stylesheet" type="text/css" href="landscape.css" media="screen and (orientation:landscape)"/>
 	<meta name="viewport" content="width=device-width, user-scalable=no"/>
-	<title> Edit Beta </title>
+	<title id="title"> Edit Beta </title>
 </head>
-
+<script>
+	document.getElementById("title").value = localStorage["title"];
+</script>
 <body>
 	<!-- HTML5 article tag for content -->
 	<div id="content">
