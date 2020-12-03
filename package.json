@@ -1,0 +1,24 @@
+{
+  "name": "BetaData",
+  "version": "1.0.0",
+  "description": "",
+  "main": "editBeta.js",
+  "dependencies": {
+    "@panzoom/panzoom": "^4.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ObstiN8/BetaData.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ObstiN8/BetaData/issues"
+  },
+  "homepage": "https://github.com/ObstiN8/BetaData#readme"
+}

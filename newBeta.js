@@ -1,12 +1,11 @@
 function doneClicked() {
   var inputTitle = document.forms["routeInfoForm"]["title"].value;
-  var inputPic = document.forms["routeInfoForm"]["routePic"].value;
+  var inputPic = document.forms["routeInfoForm"]["routeUpload"].value;
   if (inputTitle == "") {
     localStorage["title"] = "Untitled Route";
-  }
-  else {
+  } else {
     localStorage["title"] = inputTitle;
   }
-  localStorage["routePic"] = inputPic;
-  location.href='editBeta.html';
+  localStorage["routeUpload"] = inputPic;
+  location.href = "test_panzoom.html";
 }
