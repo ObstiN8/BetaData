@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Panzoom Test</title>
   </head>
-  <body>
+  <body onload="updateRouteInfo()">
     <div class="topnav">
       <button
         class="navButton"
@@ -39,32 +39,23 @@
     </div>
     <div class="panzoom-parent" style="display: block">
       <div id="panzoom" style="display: block">
-        <script>
-          const panzoom = Panzoom(document.getElementById("panzoom"), {
-            maxScale: 5,
-          });
-          panzoom.pan(10, 10);
-          panzoom.zoom(2, { animate: true });
-          document
-            .getElementById("panzoom")
-            .parentElement.addEventListener("wheel", panzoom.zoomWithWheel);
-        </script>
         <img id="routePic" src="Bike4.jpg" style="display: block" />
       </div>
     </div>
     <div class="botnav">
-      <button class="rButton" id="rfButton">
-        <img src="Icons\outline_right_foot_1.png" width="25" />
-      </button>
-      <button class="rButton" id="rhButton">
+      <button class="rButton" id="rhButton" onclick="addHold('rh');">
         <img src="Icons\outline_right_hand_2.png" width="25" />
       </button>
-      <button class="lButton" id="lhButton">
+      <button class="rButton" id="rfButton" onclick="addHold('rf');">
+        <img src="Icons\outline_right_foot_1.png" width="25" />
+      </button>
+      <button class="lButton" id="lhButton" onclick="addHold('lh');">
         <img src="Icons\outline_left_hand_2.png" width="25" />
       </button>
-      <button class="lButton" id="lfButton">
+      <button class="lButton" id="lfButton" onclick="addHold('lf');">
         <img src="Icons\outline_left_foot_1.png" width="25" />
       </button>
     </div>
+    <script src="editBeta.js"></script>
   </body>
 </html>
