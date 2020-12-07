@@ -21,41 +21,43 @@
 
   <body>
     <!-- HTML5 article tag for content -->
-    <div>
-      <div class="topnav">
-        <button class="navButton" id="doneButton" onclick="doneClicked();">
-          <img src="Icons\check.png" width="25" />
-        </button>
-        <button
-          class="navButton"
-          id="cancelButton"
-          onclick="location.href='index.html';"
-        >
-          <img src="Icons\exit.png" width="25" />
-        </button>
-        <button
-          class="navButton"
-          id="infoButton"
-          onclick="location.href='info.html';"
-        >
-          <img src="Icons\info.png" width="25" />
-        </button>
-        <h1>New Beta</h1>
-      </div>
-      <form name="routeInfoForm" onsubmit="return validateForm()">
-        <label for="title">Give your Beta a title:</label><br />
-        <input type="text" id="title" name="title" /><br /><br />
-        <label for="routeUpload">Upload an image of the route:</label><br />
-        <input
-          type="file"
-          id="routeUpload"
-          name="routeUpload"
-          accept="image/*"
-        /><br /><br />
-        <!-- <input type="submit" value="Create Beta" onclick="location.href='editBeta.html';"> -->
-      </form>
-      <!-- P stands for paragraph -->
-      <!-- <p>We believe in bicycles! Everything you need to be a WPI Cyclist.</p> -->
+    <div class="topnav">
+      <button class="navButton" id="doneButton" onclick="doneClicked();">
+        <img src="Icons\check.png" width="25" />
+      </button>
+      <button
+        class="navButton"
+        id="cancelButton"
+        onclick="location.href='index.html';"
+      >
+        <img src="Icons\exit.png" width="25" />
+      </button>
+      <button
+        class="navButton"
+        id="infoButton"
+        onclick="location.href='new_info.html';"
+      >
+        <img src="Icons\info2.png" width="25" />
+      </button>
+      <h1>New Beta</h1>
     </div>
+    <form
+      name="routeInfoForm"
+      onsubmit="return validateForm()"
+      style="margin: 5px"
+    >
+      <label for="title">Give your Beta a title:</label>
+      <input type="text" id="title" name="title" /><br /><br />
+      <label for="routeUpload">Upload an image of the route:</label>
+      <input
+        type="file"
+        id="routeUpload"
+        name="routeUpload"
+        accept="image/*"
+      /><br /><br />
+      <!-- <input type="submit" value="Create Beta" onclick="location.href='editBeta.html';"> -->
+    </form>
+    <!-- P stands for paragraph -->
+    <!-- <p>We believe in bicycles! Everything you need to be a WPI Cyclist.</p> -->
   </body>
 </html>

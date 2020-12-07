@@ -7,5 +7,5 @@ function doneClicked() {
     localStorage["title"] = inputTitle;
   }
   localStorage["routeUpload"] = inputPic;
-  location.href = "test_panzoom.html";
+  location.href = "editBeta.html";
 }

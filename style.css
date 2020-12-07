@@ -1,5 +1,6 @@
 header {
-  font-family: Futura, Trebuchet MS;
+  /* font-family: Futura, Trebuchet MS; */
+  font-family: Arial, sans-serif;
   font-weight: bold;
   color: #ac2b37;
   font-size: 25px;
@@ -10,22 +11,37 @@ header.secondary {
   padding-left: 75px;
 }
 
-h1 {
-  font-family: Futura, Trebuchet MS;
-  font-weight: bold;
-  font-size: 20px;
-  color: #e9e9e9;
-  padding: 5px;
-  margin: 0px;
-}
-
 body {
+  font-family: Arial, sans-serif;
+  /* font-family: Futura, Trebuchet MS; */
   margin: 0px;
-  font-family: Futura, Trebuchet MS;
+  /* font-family: */
   font-weight: normal;
   color: #000000;
   font-size: 15px;
   background-color: #a9b0b7;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  /* font-family: Futura, Trebuchet MS; */
+  text-align: center;
+  font-size: 20px;
+  /* color: black; */
+  color: dimgray;
+  padding: 10px 5px 5px 5px;
+  margin: 0px 5px;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  color: #e9e9e9;
+  padding: 5px;
+  margin: 3px 5px;
+  /* margin: auto 0; */
 }
 
 p {
@@ -41,7 +57,7 @@ p {
   /* position: relative; */
   position: absolute;
   top: 59px;
-  bottom: 59px;
+  bottom: 0px;
   left: 0px;
   right: 0px;
   /* width: 100vmax; */
@@ -91,34 +107,52 @@ button {
 }
 
 button.hold {
-  /* display: inline-flex; */
   position: absolute;
+  /* align-content: center; */
   left: 0;
   top: 0;
   background-color: #009999;
-  font-size: 0px;
+  font-size: 10px;
   margin: 2px;
-  padding: 1px;
+  padding: 3px;
   border-width: 1px;
+  color: #e9e9e9;
+  /* color: black; */
 }
 
 .topnav {
   background-color: #333;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
   overflow: hidden;
 }
 
 .topnav button.homeButton {
-  display: inline-flex;
-  float: left;
-  font-family: Consolas;
-  background-color: green;
+  display: block;
+  /* position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #628217;
   color: #e9e9e9;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0px 500px 500px 0px;
-  padding-right: 10px;
-  margin-left: 0px;
+  border-radius: 500px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#doneButton {
+  background-color: #628217;
+}
+
+#infoButton {
+  background-color: #ebebeb;
+}
+
+#cancelButton {
+  background-color: #fa8986;
 }
 
 .topnav button.navButton {
@@ -128,66 +162,131 @@ button.hold {
   font-size: 20px;
 }
 
-.botnav {
-  position: absolute;
+.newButton {
+  display: inline-flex;
+  position: fixed;
   bottom: 0px;
-  width: 100%;
-  background-color: #333;
-  padding: 10px 0px 10px 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: orange;
+  margin: 0px;
+}
+
+.zoomButtons {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+}
+
+.zoomButtons button {
+  padding: 5px;
+  background-color: #ebebeb;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  width: 39px;
+  text-align: center;
+}
+
+.zoomButtons button:first-child {
+  border-bottom: none;
+  border-radius: 500px 500px 0px 0px;
+}
+
+.zoomButtons button:last-child {
+  border-radius: 0px 0px 500px 500px;
+}
+
+.holdBoxR {
   overflow: hidden;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: #333;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 25px 0px 0px 0px;
 }
 
-.botnav button.rButton {
-  display: inline-flex;
-  float: right;
-  background-color: orange;
-  font-size: 20px;
-  /* margin-right: 5px; */
+.holdBoxL {
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  background-color: #333;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 0px 25px 0px 0px;
 }
 
-.botnav button.lButton {
+.holdBoxR button {
   display: inline-flex;
-  float: left;
   background-color: orange;
-  font-size: 20px;
-  /* margin-: 5px; */
+  margin: 2.5px;
+}
+
+.holdBoxL button {
+  display: inline-flex;
+  background-color: orange;
+  margin: 2.5px;
+}
+
+div.betaItem {
+  display: flex;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 2px;
 }
 
 div.viewBeta {
-  display: inline-flex;
-  float: left;
-  font-family: Consolas;
   background-color: white;
   color: black;
-  width: 500px;
+  flex-grow: 1;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 0px;
   padding: 5px;
-  margin-right: 100px;
-  border: 1px solid #666; /* dark outline */
 }
 
 button.editBeta {
   display: inline-flex;
-  float: right;
   background-color: orange;
   font-size: 20px;
-  margin-left: 230px;
 }
 
-button.back {
-  /*These lines override the previous styling of buttons*/
+/* button.back {
   border-image: url("greyButton.png");
   background: url("greyButton.png");
   background-size: cover;
   width: 60px;
   height: 30px;
-
-  /*These lines position the back button inside the header*/
   position: absolute;
   left: 16px;
   top: 8px;
+} */
+
+label {
+  margin-left: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  padding: 3px 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 500px;
+}
+
+input[type="file"] {
+  padding: 3px 5px;
+  margin: 5px 0;
+  box-sizing: border-box;
 }
 
 #main_nav ul {
@@ -221,7 +320,7 @@ nav li:active {
 }
 
 footer {
-  font-family: Futura;
+  /* font-family: Futura; */
   font-weight: bold;
   color: #000000;
   font-size: 10px;

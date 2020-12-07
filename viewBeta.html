@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title> MAPS </title>
-</head>
-
-<body>
-    <!-- HTML5 article tag for content -->
-    <div id="content">
-   
-    <header>BIKE MAPS</header>
-
-   <footer>CS3041: Human-Computer Interaction</footer>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+      media="screen and (orientation:portrait)"
+    />
+    <script src="node_modules\@panzoom\panzoom\dist\panzoom.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Edit Beta</title>
+  </head>
+  <body onload="updateRouteInfo()">
+    <div class="topnav">
+      <button
+        class="navButton"
+        id="doneButton"
+        onclick="location.href='index.html';"
+      >
+        <img src="Icons\check.png" width="25" />
+      </button>
+      <button
+        class="navButton"
+        id="cancelButton"
+        onclick="location.href='index.html';"
+      >
+        <img src="Icons\exit.png" width="25" />
+      </button>
+      <button
+        class="navButton"
+        id="infoButton"
+        onclick="location.href='edit_info.html';"
+      >
+        <img src="Icons\info2.png" height="25" />
+      </button>
+      <h1 id="title">Beta Title</h1>
     </div>
-</body>
+    <div class="panzoom-parent" style="display: block">
+      <div id="panzoom" style="display: block">
+        <img id="routePic" src="example_route.png" style="display: block" />
+      </div>
+    </div>
+    <div class="zoomButtons">
+      <button id="zoomIn"><img src="Icons\zoom_in.png" width="25" /></button>
+      <button id="zoomOut"><img src="Icons\zoom_out.png" width="25" /></button>
+    </div>
+    <script src="editBeta.js"></script>
+  </body>
 </html>
