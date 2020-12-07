@@ -1,4 +1,4 @@
-// const { default: Panzoom } = require("@panzoom/panzoom");
+const { default: Panzoom } = require("@panzoom/panzoom");
 
 function updateRouteInfo() {
   document.getElementById("title").innerHTML = localStorage["title"];
@@ -35,13 +35,15 @@ zoomOut.addEventListener("click", () => adjustScale(false));
 
 function addHold(type) {
   var hold = document.createElement("button");
+  var hand = 1;
   hold.setAttribute("class", "hold");
   var holdID = "";
   if (type == "rf") {
     rfCounter++;
     hold.innerHTML =
-      '<img src="Icons/solid_foot_r.png" width="20"/>' + rfCounter;
+      rfCounter + '<img src="Icons/solid_foot_r.png" width="20"/>';
     holdID = type + rfCounter.toString();
+    hand = 0;
   } else if (type == "rh") {
     rhCounter++;
     hold.innerHTML =
@@ -50,8 +52,9 @@ function addHold(type) {
   } else if (type == "lf") {
     lfCounter++;
     hold.innerHTML =
-      lfCounter + '<img src="Icons/solid_foot_l.png" width="20"/>';
+      '<img src="Icons/solid_foot_l.png" width="20"/>' + lfCounter;
     holdID = type + lfCounter.toString();
+    hand = 0;
   } else if (type == "lh") {
     lhCounter++;
     hold.innerHTML =
@@ -59,6 +62,7 @@ function addHold(type) {
     holdID = type + lhCounter.toString();
   }
   hold.setAttribute("id", holdID);
+  hold.setAttribute("onClick", "openDropdowns(hand)");
   elem.appendChild(hold);
 
   const aHold = document.getElementById(holdID);
@@ -72,7 +76,6 @@ function addHold(type) {
       );
     },
   });
-  // panzoomHold.pan(1000, 1000);
   setTimeout(() => panzoomHold.pan(50, 50));
   holds.push(panzoomHold);
 }
@@ -92,4 +95,10 @@ function adjustScale(zoomIn) {
       animate: true,
     });
   });
+}
+
+function openDropdowns(hand) {
+  if (hand == true) {
+    widn;
+  }
 }
